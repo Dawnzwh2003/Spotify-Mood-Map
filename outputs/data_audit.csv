@@ -1,0 +1,17 @@
+"item","n"
+"input_rows",32833
+"rows_missing_track_id",0
+"missing_or_invalid_danceability",0
+"missing_or_invalid_energy",0
+"missing_or_invalid_loudness",0
+"missing_or_invalid_speechiness",0
+"missing_or_invalid_acousticness",0
+"missing_or_invalid_instrumentalness",0
+"missing_or_invalid_liveness",0
+"missing_or_invalid_valence",0
+"missing_or_invalid_tempo",1
+"duplicate_id_rows_removed",4477
+"distinct_track_ids",28356
+"ids_with_conflicting_audio",0
+"unique_tracks_missing_axes",0
+"mapped_tracks",28356

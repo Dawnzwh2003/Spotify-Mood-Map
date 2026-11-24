@@ -1,0 +1,2 @@
+"method","grid_points","median_distance","p95_distance","max_distance","continuous_distance_upper_bound","share_within_005","share_farther_than_010"
+"direct",961,0.0038005847503305,0.0351288352987178,0.0720270088230796,0.0955972348626312,0.987513007284079,0

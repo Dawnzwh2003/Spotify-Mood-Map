@@ -6,9 +6,10 @@ All explanations are in this README. The R files contain executable code. The an
 
 ## 1. Run the project
 
+```r
 source("mood_map.R")
 result <- run_analysis(file.choose(), "outputs")
-
+```
 
 ## 2. What the code does, step by step
 

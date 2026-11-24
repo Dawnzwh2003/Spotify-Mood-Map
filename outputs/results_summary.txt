@@ -1,0 +1,83 @@
+STSCI 5954 | direct valence-energy map
+
+Input MD5: 976d25e04baef7d04df69175fb013dd4 
+                                item     n
+                          input_rows 32833
+               rows_missing_track_id     0
+     missing_or_invalid_danceability     0
+           missing_or_invalid_energy     0
+         missing_or_invalid_loudness     0
+      missing_or_invalid_speechiness     0
+     missing_or_invalid_acousticness     0
+ missing_or_invalid_instrumentalness     0
+         missing_or_invalid_liveness     0
+          missing_or_invalid_valence     0
+            missing_or_invalid_tempo     1
+           duplicate_id_rows_removed  4477
+                  distinct_track_ids 28356
+          ids_with_conflicting_audio     0
+          unique_tracks_missing_axes     0
+                       mapped_tracks 28356
+
+Mapped unique songs: 28356 
+Valid tempos: 28355 
+Popularity zero: 2620 Missing: 0 
+
+Full catalogue Spearman correlations:
+                 danceability energy loudness speechiness acousticness instrumentalness liveness valence
+danceability            1.000 -0.138   -0.035       0.260        0.102           -0.045   -0.141   0.333
+energy                 -0.138  1.000    0.663       0.072       -0.499            0.105    0.144   0.121
+loudness               -0.035  0.663    1.000       0.103       -0.299           -0.166    0.090   0.035
+speechiness             0.260  0.072    0.103       1.000        0.024           -0.203    0.062   0.076
+acousticness            0.102 -0.499   -0.299       0.024        1.000           -0.207   -0.056   0.085
+instrumentalness       -0.045  0.105   -0.166      -0.203       -0.207            1.000   -0.035  -0.160
+liveness               -0.141  0.144    0.090       0.062       -0.056           -0.035    1.000  -0.052
+valence                 0.333  0.121    0.035       0.076        0.085           -0.160   -0.052   1.000
+tempo                  -0.167  0.179    0.116       0.020       -0.165            0.068    0.030  -0.060
+                  tempo
+danceability     -0.167
+energy            0.179
+loudness          0.116
+speechiness       0.020
+acousticness     -0.165
+instrumentalness  0.068
+liveness          0.030
+valence          -0.060
+tempo             1.000
+
+Full catalogue screen coverage:
+ method grid_points median_distance p95_distance max_distance continuous_distance_upper_bound
+ direct         961     0.003800585   0.03512884   0.07202701                      0.09559723
+ share_within_005 share_farther_than_010
+         0.987513                      0
+
+Full catalogue path retrieval:
+ method    mode epsilon taps changes repeat_rate median_bpm_jump_changed p90_bpm_jump_changed
+ direct nearest    0.03  305     278 0.073333333                 27.0170              76.3784
+ direct  smooth    0.03  305     298 0.006666667                  3.2395              12.1969
+ share_changed_jumps_over30 median_valence_jump_changed median_energy_jump_changed mean_tap_distance
+                 0.46043165                       0.014                      0.012       0.005605545
+                 0.03355705                       0.013                      0.013       0.010694477
+ p95_tap_distance max_excess_distance sparse_share
+       0.01894125          0.00000000            0
+       0.03223001          0.02906226            0
+
+Exploratory locality sensitivity:
+ method   mode epsilon taps changes repeat_rate median_bpm_jump_changed p90_bpm_jump_changed
+ direct smooth    0.00  305     278 0.073333333                 25.4445              76.3784
+ direct smooth    0.01  305     288 0.040000000                  6.3155              31.5369
+ direct smooth    0.03  305     298 0.006666667                  3.2395              12.1969
+ direct smooth    0.05  305     300 0.000000000                  2.2900               9.4642
+ share_changed_jumps_over30 median_valence_jump_changed median_energy_jump_changed mean_tap_distance
+                 0.43884892                       0.014                      0.012       0.005605545
+                 0.10763889                       0.014                      0.012       0.007366894
+                 0.03355705                       0.013                      0.013       0.010694477
+                 0.02666667                       0.014                      0.014       0.012979820
+ p95_tap_distance max_excess_distance sparse_share
+       0.01894125        1.986258e-16            0
+       0.02061121        9.982507e-03            0
+       0.03223001        2.906226e-02            0
+       0.04260647        4.766171e-02            0
+
+Coordinates use observed valence and energy. No training or outcome prediction is performed.
+Tempo and coverage are offline diagnostics, not listening-satisfaction measurements.
